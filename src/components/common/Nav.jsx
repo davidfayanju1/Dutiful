@@ -28,6 +28,14 @@ const Nav = () => {
         </ul>
       </nav>
 
+      <div className="burger md:hidden block">
+        <img
+          src="/svgs/burger.svg"
+          alt=""
+          //   className="w-[2rem] h-[2rem] bg-[]"
+        />
+      </div>
+
       <div className="button_container hidden md:flex items-center justify-center gap-7">
         <button
           onClick={() => navigate("/login")}
