@@ -3,6 +3,7 @@ import CommonLayout from "../../layout/CommonLayout";
 import ButtonComp from "../../components/common/ButtonComp";
 import { Link, useNavigate } from "react-router-dom";
 import OtpBox from "react-otp-box";
+import CustomOtp from "../../components/common/CustomOtp";
 
 const EnterOtp = () => {
   const navigate = useNavigate();
@@ -16,7 +17,8 @@ const EnterOtp = () => {
     <CommonLayout>
       <div className="bg-white py-10 max-w-[30rem] w-[95%] mx-auto">
         <div className="input_container mt-[10rem] mb-5">
-          <OtpBox values={otp} onChange={handleChange} numInputs={8} />
+          {/* <OtpBox values={otp} onChange={handleChange} numInputs={4} /> */}
+          <CustomOtp />
         </div>
         <span className="block mx-auto text-[#686868] text-center md:w-[90%]">
           Enter OTP code that was sent to your email, segunsolaru@gmail.com.
