@@ -91,38 +91,44 @@ const Plans = () => {
         </span>
       </div>
 
-      <section className="w-full bg-[#FCFAFF] mx-auto md:p-[4rem] p-[1rem] min-h-[100vh] flex md:flex-row flex-col gap-[3rem] items-start justify-center">
-        {plans.map((item) => (
-          <div
-            className="item_card h-full px-3 py-[4rem] md:w-[25%] w-full rounded-[8px] bg-white"
-            key={item.name}
-          >
-            <small className="font-semibold text-[1rem] mb-3">
-              {item.title}
-            </small>
-
-            <div className="text_container flex gap-1 items-start">
-              <small className="block text-[.9rem] mt-1">
-                {item.currency && item.currency}
+      <section className="w-full bg-[#FCFAFF] mx-auto md:p-[4rem] p-[1rem] min-h-[100vh]">
+        <div className="cards_container flex md:flex-row flex-col gap-[3rem] items-start justify-center">
+          {plans.map((item) => (
+            <div
+              className="item_card h-full px-3 py-[4rem] md:w-[25%] w-full rounded-[8px] bg-white"
+              key={item.name}
+            >
+              <small className="font-semibold text-[1rem] mb-3">
+                {item.title}
               </small>
-              <h1 className="font-serif font-bold text-[1.7rem] mb-4">
-                {item.name}
-              </h1>
-              <div className="small"></div>
-            </div>
 
-            <ButtonComp text={"Get Started"} buttonStyle={"mb-9"} />
+              <div className="text_container flex gap-1 items-start">
+                <small className="block text-[.9rem] mt-1">
+                  {item.currency && item.currency}
+                </small>
+                <h1 className="font-serif font-bold text-[1.7rem] mb-4">
+                  {item.name}
+                </h1>
+                <div className="small"></div>
+              </div>
 
-            <div className="perks_container">
-              {item.perks.map((item) => (
-                <span className="flex mb-8 items-center justify-start gap-4">
-                  <img src="/svgs/mark.svg" alt="" />
-                  {item}
-                </span>
-              ))}
+              <ButtonComp text={"Get Started"} buttonStyle={"mb-9"} />
+
+              <div className="perks_container">
+                {item.perks.map((item) => (
+                  <span className="flex mb-8 items-center justify-start gap-4">
+                    <img src="/svgs/mark.svg" alt="" />
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        <section className="features_overview mt-8">
+          <h1 className="font-semibold text-[1.5rem] ">Features Overview </h1>
+        </section>
       </section>
     </CommonLayout>
   );
