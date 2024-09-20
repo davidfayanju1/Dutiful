@@ -9,6 +9,9 @@ import ForgotPassword from "./pages/auth/ForgotPassword";
 import Otp from "./pages/auth/Otp";
 import EnterOtp from "./pages/auth/EnterOtp";
 import ResetPassword from "./pages/auth/ResetPassword";
+import Landing from "./pages/inner/Landing";
+import Plans from "./pages/inner/Plans";
+import Touch from "./pages/inner/Touch";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +24,9 @@ function App() {
       <Route path="otp" element={<Otp />} />
       <Route path="enterotp" element={<EnterOtp />} />
       <Route path="resetpassword" element={<ResetPassword />} />
+      <Route path="/" element={<Landing />} />
+      <Route path="/plans" element={<Plans />} />
+      <Route path="/touch" element={<Touch />} />
     </Routes>
   );
 }
