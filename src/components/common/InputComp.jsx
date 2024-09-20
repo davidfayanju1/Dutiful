@@ -7,6 +7,7 @@ const InputComp = ({
   label,
   value,
   handleChangeText,
+  areaTextColor,
 }) => {
   const [open, setOpen] = useState(true);
 
@@ -24,14 +25,26 @@ const InputComp = ({
       <div
         className={` ${containerStyle}  min-h-[3rem] bg-gray-50 border-gray-200 rounded-[6px] border-solid border-[1px] flex items-center justify-center`}
       >
-        <input
-          type={title === "Password" ? (open ? "text" : "password") : "text"}
-          className={`${textColor} bg-transparent outline-none px-4 text-[16px] h-full ${
-            title === "Password" ? "w-[88%]" : "w-full"
-          }`}
-          value={value}
-          onChange={handleChangeText}
-        />
+        {title === "Message" ? (
+          <textarea
+            className={`${areaTextColor} bg-transparent rounded-[6px] outline-none px-2 py-2 text-black text-[16px] w-full`}
+            cols={100}
+          />
+        ) : title === "Subject" ? (
+          <select name="" id="" className="w-[95%] bg-transparent outline-none">
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        ) : (
+          <input
+            type={title === "Password" ? (open ? "text" : "password") : "text"}
+            className={`${textColor} bg-transparent outline-none px-4 text-[16px] h-full ${
+              title === "Password" ? "w-[88%]" : "w-full"
+            }`}
+            value={value}
+            onChange={handleChangeText}
+          />
+        )}
 
         {title === "Password" && (
           <div className="item_container ">

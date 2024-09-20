@@ -15,29 +15,36 @@ const Landing = () => {
           </span>
         </header>
         <figure className="image_container md:w-[40%] w-full">
-          <img src="/svgs/phone.svg" alt="" className="w-full md:h-[35rem]" />
+          <img src="/images/hero.png" alt="" className="w-full md:h-[35rem]" />
         </figure>
       </div>
 
-      <div className="hero_item_container  md:flex-row flex-col md:px-10 px-4 min-h-[20rem] py-4 flex items-center justify-between gap-5">
-        <div className="images_container  relative">
-          <img src="/svgs/ellipse.svg" alt="" className="relative" />
-          <img
-            src="/svgs/pic1.svg"
-            alt=""
-            className="absolute md:top-[10%] top-[2%] left-[10%] md:left-[16%]"
-          />
-          <img
-            src="/svgs/pic2.svg"
-            alt=""
-            className="absolute top-[30%] md:right-[5%] right-0"
-          />
-          <img
-            src="/svgs/pic3.svg"
-            alt=""
-            className="absolute bottom-[15%] md:left-[20%] left-0"
-          />
+      <div className="hero_item_container md:flex-row flex-col md:px-10 px-3 md:min-h-[20rem] min-h-[65rem] py-[12rem] flex items-center justify-between gap-10">
+        <div className="images_container relative md:w-[40%] w-full h-[30rem]">
+          <div className="image_wrapper absolute top-0 left-0 w-full h-full">
+            <img
+              src="/svgs/ellipse.svg"
+              alt=""
+              className="absolute top-0 left-0"
+            />
+            <img
+              src="/svgs/pic1.svg"
+              alt=""
+              className="absolute md:top-[-10%] top-[-30%] left-[0%]"
+            />
+            <img
+              src="/svgs/pic2.svg"
+              alt=""
+              className="absolute md:top-[30%] top-[10%] right-[-5%]"
+            />
+            <img
+              src="/svgs/pic3.svg"
+              alt=""
+              className="absolute md:bottom-[-15%] bottom-[-0%] left-[2%]"
+            />
+          </div>
         </div>
+
         <div className="text_container md:w-[45%] w-full">
           <span className="md:font-bold font-semibold text-[#1E1E4B] font-serif md:text-[2rem] text-[2rem]">
             Collect reviews and ratings from customers
@@ -72,7 +79,7 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className="text_container  md:w-[45%] w-full mt-[4rem]">
+        <div className="text_container md:w-[45%] w-full mt-[4rem]">
           <span className="md:font-bold font-semibold text-[#1E1E4B] font-serif md:text-[2rem] text-[2rem]">
             Accept and sell appointments
           </span>
