@@ -4,7 +4,7 @@ import CommonLayout from "../../layout/CommonLayout";
 const Landing = () => {
   return (
     <CommonLayout>
-      <div className="hero_item_container mt-[6rem] md:flex-row flex-col md:px-10 px-4 min-h-[20rem] py-4 flex items-center justify-between">
+      <div className="hero_item_container md:flex-row flex-col md:px-10 px-4 min-h-[20rem] py-4 flex items-center justify-between">
         <header className="md:w-[45%] w-full  block">
           <h1 className="font-semibold font-serif mb-2 md:text-[2.3rem] text-[2rem]">
             List and grow your business  with just few clicks

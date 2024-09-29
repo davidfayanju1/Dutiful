@@ -6,7 +6,7 @@ const CommonLayout = ({ children }) => {
   return (
     <div className="item_container">
       <Nav />
-      {children}
+      <div className="item_container mt-[6rem]">{children}</div>
       <Footer />
     </div>
   );
